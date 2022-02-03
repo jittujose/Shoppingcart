@@ -4,18 +4,18 @@
         
 
             
-                <h2 class="text-center">Login</h2><h1>
-                <form action="/login" method="POST"  >
+                <h2 class="text-center">Login</h2>
+                <form id="loginForm" method="post" action="admin/login">
                 {{#if loginErr}}
                     <p class="error">{{loginErr}}</p>
                 {{/if}}
                     <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" name="Name" class="form-control" placeholder="Enter Name">
+                    <input type="text" name="Name" id="name" class="form-control" placeholder="Enter Name">
                         </div>
                         <div class="form-group">
                      <label for="">Password</label>
-                    <input type="password" id="name" name="Password" class="form-control">
+                    <input type="password" id="password" name="Password" class="form-control">
                     </div>
                     
                    
@@ -28,10 +28,3 @@
             </div>
         </div>
     </div>
-<script>
-    function adminlogin()
-    if (document.getElementById(name).innerHTML==="admin")&&(document.getElementById(pass)==="123")
-    {
-        
-    }
-</script>
